@@ -14,13 +14,16 @@ public class HomePage {
 	}
 	
 	@FindBy(linkText = "Organizations")
-	WebElement orhLink;
-	
+	private WebElement orhLink;
+
 	@FindBy(xpath = "//img[@src='themes/softed/images/user.PNG']")
-	WebElement logOutBtn;
+	private WebElement logOutBtn;
 	
 	@FindBy(linkText = "Sign Out")
-	WebElement logOutLink;
+	private WebElement logOutLink;
+	
+	@FindBy(linkText = "Products")
+	private WebElement productLink;
 
 	public WebElement getOrhLink() {
 		return orhLink;
@@ -34,6 +37,8 @@ public class HomePage {
 		return logOutLink;
 	}
 	
-	
+	public WebElement getProductLink() {
+		return productLink;
+	}
 
 }
